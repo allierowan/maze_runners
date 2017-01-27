@@ -1,0 +1,54 @@
+// Place all the styles related to the grids controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.grid-box {
+  height: 691px;
+  width: 691px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+div {
+  width: 69px;
+  height: 69px;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-box div {
+    border: 1px solid #ccc;
+    border-width: 0px 0px 0px 0px;
+    float: left;
+}
+
+.grid-box div.left {
+  border-left-width: 1px;
+}
+
+.grid-box div.right {
+  border-right-width: 1px;
+}
+
+.grid-box div.top {
+  border-top-width: 1px;
+}
+
+.grid-box div.bottom {
+  border-bottom-width: 1px;
+}
+.grid-box div.solution {
+  background-color: yellow;
+}
+.start_cell, .end_cell {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.start_cell:before {
+  content: "Start"
+
+}
+.end_cell:before {
+  content: "End"
+}

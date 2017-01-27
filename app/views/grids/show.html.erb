@@ -1,0 +1,14 @@
+<h1>Your Maze</h1>
+<%= link_to "Generate New Maze", grids_path, method: :post %>
+<br />
+<%= link_to "Solve Maze", grid_path(@maze.id), method: :patch %>
+
+<div class="grid-box">
+  <% @maze.side_length.times do |y| %>
+      <% @maze.side_length.times do |x| %>
+        <% cell = @maze.cell_at(x, 9-y) %>
+        <div class="maze-cell <%= cell.css_classes %>">
+        </div>
+      <% end %>
+  <% end %>
+</div>

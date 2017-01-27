@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  x_pos: 1
+  y_pos: 1
+  left_wall: false
+  right_wall: false
+  bottom_wall: false
+  top_wall: false
+
+two:
+  x_pos: 1
+  y_pos: 1
+  left_wall: false
+  right_wall: false
+  bottom_wall: false
+  top_wall: false
