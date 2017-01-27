@@ -1,7 +1,10 @@
-<h1>Your Maze</h1>
+<h1>Your Maze
+  <br />
+  <small>Get from your desk <img src="/assets/desk.png" height="50px"> to the coffee maker!<img src="/assets/coffee.png" height="40px"></small>
+</h1>
 <%= link_to "Generate New Maze", grids_path, method: :post %>
 <br />
-<%= link_to "Solve Maze", grid_path(@maze.id), method: :patch %>
+<%= link_to "Show Solution", grid_path(@maze.id), method: :patch %>
 
 <div class="grid-box">
   <% @maze.side_length.times do |y| %>

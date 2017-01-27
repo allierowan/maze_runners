@@ -1,7 +1,9 @@
 // Place all the styles related to the grids controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+* {
+  font-family: Verdana, Geneva, sans-serif;
+}
 .grid-box {
   height: 691px;
   width: 691px;
@@ -39,16 +41,13 @@ div {
   border-bottom-width: 1px;
 }
 .grid-box div.solution {
-  background-color: yellow;
+  background-color: rgb(108, 150, 96);
 }
-.start_cell, .end_cell {
-  padding-top: 15px;
-  padding-left: 15px;
-}
+
 .start_cell:before {
-  content: "Start"
+  content: url(desk.png);
 
 }
 .end_cell:before {
-  content: "End"
+  content: url(coffee.png);
 }
