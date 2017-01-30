@@ -1,2 +1,15 @@
+<% if @maze %>
+  <% @maze.errors.full_messages.each do |message| %>
+    <div class="alert alert-danger">
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
 <h1>Create a random maze</h1>
-<%= link_to "New Maze", grids_path, method: :post %>
+<p>
+  This is a little Rails app that creates a grid (currently defaulting to 10x10, but could be any size), turns the grid into a maze, and then solves the maze. The maze is generated using a random version of the depth-first search algorithm. The iterator will pick a path through the grid, removing walls between cells as it goes, and marking them as "visited." If it reaches a point where all neighboring cells are visited, it will backtrack until it finds a cell with unvisited neighbors, or until all cells have been visited. The grid gets a random start point that is on the edge, and an end point that is located on the opposite edge.
+</p>
+<p>
+  The iterator solves the maze by filling in dead ends. it fills in a dead end by blocking off cells until it reaches a junction. Once it has filled in all the dead ends, the solution(s) remain. These mazes only have one solution, but this approach would also expose multiple solutions if they existed.
+</p>
+<%= link_to "Create a Maze!", grids_path, method: :post %>

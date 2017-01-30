@@ -1,10 +1,14 @@
 class GridsController < ApplicationController
   def create
-    grid = Grid.create(side_length: 10)
-    grid.setup_grid
-    iterator = Iterator.new(grid)
-    maze = iterator.create_maze
-    redirect_to grid_path(maze.id)
+    @grid = Grid.new(side_length: 10)
+    if @grid.save
+      @grid.setup_grid
+      iterator = Iterator.new(@grid)
+      maze = iterator.create_maze
+      redirect_to grid_path(maze.id)
+    else
+      render root_path
+    end
   end
 
   def update
