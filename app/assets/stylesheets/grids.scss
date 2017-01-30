@@ -21,6 +21,7 @@ aside {
   margin: 0;
   margin-bottom: 25px;
   margin-top: 45px;
+  margin-left: 10%;
 }
 
 div.maze-cell {
@@ -71,10 +72,19 @@ ul li {
 li.nav-text {
   color: rgb(142, 142, 142);
   padding: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 li.header-text {
   font-size: 25px;
   padding: 10px;
   padding-bottom: 30px;
+}
+
+@media screen and (max-width: 990px){
+  aside.sidebar {
+    height: 35%;
+  }
+  ul.nav {
+    margin-bottom: 20px;
+  }
 }

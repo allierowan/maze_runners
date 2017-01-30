@@ -17,19 +17,21 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <aside class="col-md-2 sidebar">
+        <aside class="col-md-3 sidebar">
             <ul class="nav nav-sidebar">
               <li class="header-text">
                 Mazerunner
               </li>
               <li class="nav-text">
-                Get from your desk <img src="/assets/desk.png" height="50px"> to the coffee maker!<img src="/assets/coffee.png" height="40px">
+                Get from your desk to the coffee maker!
+                <br />
+                <img src="/assets/desk.png" height="50px"> --> <img src="/assets/coffee.png" height="40px">
               </li>
               <li><%= link_to "Generate New Maze", grids_path, method: :post %></li>
               <li><%= link_to "Show Solution", grid_path(@maze.id), method: :patch %></li>
             </ul>
           </aside>
-          <div class="col-md-10">
+          <div class="col-md-9">
             <%= yield %>
           </div>
       </div>
