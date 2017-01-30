@@ -25,7 +25,7 @@
               <li class="nav-text">
                 Get from your desk to the coffee maker!
                 <br />
-                <%= image_tag("/assets/desk.png", height: "50px") %> --> <%= image_tag "/assets/coffee.png", height: "40px" %>
+                <%= image_tag("desk.png", size: "50x50") %> --> <%= image_tag("coffee.png", size: "40x40") %>
               </li>
               <li><%= link_to "Generate New Maze", grids_path, method: :post %></li>
               <% if @maze %>
