@@ -25,7 +25,7 @@
               <li class="nav-text">
                 Get from your desk to the coffee maker!
                 <br />
-                <img src="/assets/desk.png" height="50px"> --> <img src="/assets/coffee.png" height="40px">
+                <%= image_url("/assets/desk.png", height: "50px") %> --> <%= image_url "/assets/coffee.png", height: "40px" %>
               </li>
               <li><%= link_to "Generate New Maze", grids_path, method: :post %></li>
               <% if @maze %>
