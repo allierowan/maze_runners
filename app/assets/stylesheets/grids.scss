@@ -57,11 +57,11 @@ div.maze-cell {
 }
 
 .start_cell:before {
-  content: image_url(desk.png);
+  content: image-url("desk.png");
 
 }
 .end_cell:before {
-  content: image_url(coffee.png);
+  content: image-url("coffee.png");
 }
 ul li a {
   color: rgb(191, 191, 191);
