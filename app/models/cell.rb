@@ -120,8 +120,8 @@ class Cell < ApplicationRecord
     right_string = ("right " if right_wall) || ""
     top_string = ("top " if top_wall) || ""
     bottom_string = ("bottom " if bottom_wall) || ""
-    start_string = ("start_cell " if starting_cell?) || ""
-    end_string = ("end_cell " if ending_cell?) || ""
+    start_string = ("start_cell " if ending_cell?) || ""
+    end_string = ("end_cell " if starting_cell?) || ""
     solution_string = ("solution " if solution_cell?) || ""
 
     class_string = left_string + right_string + top_string + bottom_string + start_string + end_string + solution_string
